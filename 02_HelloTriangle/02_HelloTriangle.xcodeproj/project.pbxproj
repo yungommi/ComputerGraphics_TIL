@@ -12,7 +12,7 @@
 		21048C6327F21151007F8B8B /* libGLEW.2.2.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 21048C6127F21151007F8B8B /* libGLEW.2.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		21048C6627F21161007F8B8B /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 21048C6527F21161007F8B8B /* libglfw.3.3.dylib */; };
 		21048C6727F21161007F8B8B /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 21048C6527F21161007F8B8B /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		21048C6927F211CB007F8B8B /* hello_triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21048C6827F211CB007F8B8B /* hello_triangle.cpp */; };
+		21048C8C27F2E325007F8B8B /* 02_HelloTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21048C8A27F2E325007F8B8B /* 02_HelloTriangle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +44,7 @@
 		21048C5F27F21130007F8B8B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		21048C6127F21151007F8B8B /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
 		21048C6527F21161007F8B8B /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
-		21048C6827F211CB007F8B8B /* hello_triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hello_triangle.cpp; path = ../../../Source/02_HelloTriangle/hello_triangle.cpp; sourceTree = "<group>"; };
+		21048C8A27F2E325007F8B8B /* 02_HelloTriangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 02_HelloTriangle.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 		21048C5627F2110C007F8B8B /* 02_HelloTriangle */ = {
 			isa = PBXGroup;
 			children = (
-				21048C6827F211CB007F8B8B /* hello_triangle.cpp */,
+				21048C8A27F2E325007F8B8B /* 02_HelloTriangle.cpp */,
 			);
 			path = 02_HelloTriangle;
 			sourceTree = "<group>";
@@ -98,11 +98,22 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		21048C8927F2D116007F8B8B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		21048C5327F2110C007F8B8B /* 02_HelloTriangle */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21048C5B27F2110C007F8B8B /* Build configuration list for PBXNativeTarget "02_HelloTriangle" */;
 			buildPhases = (
+				21048C8927F2D116007F8B8B /* Headers */,
 				21048C5027F2110C007F8B8B /* Sources */,
 				21048C5127F2110C007F8B8B /* Frameworks */,
 				21048C5227F2110C007F8B8B /* CopyFiles */,
@@ -154,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21048C6927F211CB007F8B8B /* hello_triangle.cpp in Sources */,
+				21048C8C27F2E325007F8B8B /* 02_HelloTriangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
