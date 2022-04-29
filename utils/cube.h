@@ -22,7 +22,7 @@
 class Cube {
 public:
     
-    // vertex position array
+    // vertex position array 3x4x6 = 72
     GLfloat cubeVertices[72]  = { // initialized as size = 1 for each dimension, 72 elements
         .5f, .5f, .5f,  -.5f, .5f, .5f,  -.5f,-.5f, .5f,  .5f,-.5f, .5f, // v0,v1,v2,v3 (front)
         .5f, .5f, .5f,   .5f,-.5f, .5f,   .5f,-.5f,-.5f,  .5f, .5f,-.5f, // v0,v3,v4,v5 (right)
@@ -33,6 +33,7 @@ public:
     };
     
     // normal array
+    //lighting에 가면 쓰임 
     GLfloat cubeNormals[72] = {  // 72 elements
         0, 0, 1,   0, 0, 1,   0, 0, 1,   0, 0, 1,  // v0,v1,v2,v3 (front)
         1, 0, 0,   1, 0, 0,   1, 0, 0,   1, 0, 0,  // v0,v3,v4,v5 (right)

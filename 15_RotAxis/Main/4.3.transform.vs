@@ -4,6 +4,7 @@ layout (location = 0) in vec3 aPos;
 layout (location = 1) in vec3 aNormal;
 layout (location = 2) in vec4 aColor;
 layout (location = 3) in vec2 aTexCoord;
+//normal과 texcoord는 지금은 안쓰임
 
 out vec4 toColor;
 uniform mat4 transform;
