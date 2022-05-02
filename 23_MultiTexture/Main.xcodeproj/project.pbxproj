@@ -45,6 +45,10 @@
 		21048C8027F2149F007F8B8B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		21048C8227F214AD007F8B8B /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
 		21048C8627F214BC007F8B8B /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.3.6/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		21591E32281BD11300B0B625 /* awesomeface.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = awesomeface.bmp; sourceTree = "<group>"; };
+		21591E33281BD11300B0B625 /* container.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = container.bmp; sourceTree = "<group>"; };
+		21591E34281BD11300B0B625 /* global.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = global.fs; sourceTree = "<group>"; };
+		21591E35281BD11300B0B625 /* global.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = global.vs; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,10 @@
 		21048C7727F2148A007F8B8B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				21591E32281BD11300B0B625 /* awesomeface.bmp */,
+				21591E33281BD11300B0B625 /* container.bmp */,
+				21591E34281BD11300B0B625 /* global.fs */,
+				21591E35281BD11300B0B625 /* global.vs */,
 				21048C7827F2148A007F8B8B /* main.cpp */,
 			);
 			path = Main;

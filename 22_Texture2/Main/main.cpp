@@ -218,8 +218,7 @@ void key_callback(GLFWwindow *window, int key, int scancode, int action, int mod
         glfwSetWindowShouldClose(window, true);
     }
     else if (key == GLFW_KEY_SPACE && action == GLFW_PRESS) {
-        int m = 4;
-        texCoordState = (texCoordState + 1) % m;
+        texCoordState = (texCoordState + 1) % 4;
         
         switch (texCoordState) {
             case 0:

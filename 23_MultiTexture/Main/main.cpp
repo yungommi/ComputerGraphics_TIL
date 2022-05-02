@@ -45,7 +45,7 @@ float arcballSpeed = 0.3f;
 static Arcball modelArcBall(SCR_WIDTH, SCR_HEIGHT, arcballSpeed, true, true);
 
 // for texture
-static unsigned int texture1, texture2; // Array of texture ids.
+static unsigned int texture1, texture3; // Array of texture ids.
 
 
 int main()
@@ -152,8 +152,8 @@ void loadTexture() {
     glGenerateMipmap(GL_TEXTURE_2D);
     
     // Loading Texture2
-    glGenTextures(1, &texture2);
-    glBindTexture(GL_TEXTURE_2D, texture2);
+    glGenTextures(1, &texture3);
+    glBindTexture(GL_TEXTURE_2D, texture3);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -169,14 +169,14 @@ void loadTexture() {
     else if (nrChannels == 3) format = GL_RGB;
     else if (nrChannels == 4) format = GL_RGBA;
     
-    glBindTexture( GL_TEXTURE_2D, texture2 );
+    glBindTexture( GL_TEXTURE_2D, texture3 );
     glTexImage2D( GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, image );
     glGenerateMipmap(GL_TEXTURE_2D);
     
     // Setting texture
     globalShader->use();
     globalShader->setInt("texture1", 0);
-    globalShader->setInt("texture2", 1);
+    globalShader->setInt("texture3", 1);
     
 }
 
@@ -193,7 +193,7 @@ void render() {
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture1);
     glActiveTexture(GL_TEXTURE1);
-    glBindTexture(GL_TEXTURE_2D, texture2);
+    glBindTexture(GL_TEXTURE_2D, texture3);
     
     cube->draw(globalShader);
     

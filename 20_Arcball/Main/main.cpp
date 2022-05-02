@@ -118,7 +118,7 @@ GLFWwindow *glAllInit()
 void render() {
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    
+    //COP & viewpoint & 가상 up-vector
     view = glm::lookAt(glm::vec3(0.0f, 0.0f, 7.0f), glm::vec3(0.0f, 0.0f, 0.0f),
                        glm::vec3(0.0f, 1.0f, 0.0f));
     view = view * camArcBall.createRotationMatrix();
